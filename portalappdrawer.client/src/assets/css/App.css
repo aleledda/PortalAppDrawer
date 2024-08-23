@@ -9,3 +9,15 @@ th, td {
     padding-left: 1rem;
     padding-right: 1rem;
 }
+
+.AllElements {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100vh;
+    align-content: stretch;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}

@@ -1,15 +1,18 @@
-import '../assets/css/Componenti/AppComponent.css';
-import { useSelector } from "react-redux";
+import '../assets/css/Componenti/AppComponent.css'
+import { useSelector } from "react-redux"
+import { Link } from 'react-router-dom'
 
-function App({ key, nome, icona, versione }) {
+function App({ id, nome, icona, versione, goto }) {
     return (
-        <>
-            <div key={key} className="text-red-500" style={{ backgroundColor: "grey" }}>
-                <img src={icona} alt="" style={{ width: "100px", height: "100px" }}></img>
-                <label className="">{nome}</label>
-                <label>{ versione }</label>
+        <Link to={goto}>
+            <div key={id} className="AppComponentFrame">
+                <div className="AppComponentIcona">
+                    {icona}
+                </div>
+                <label className="AppComponentNomeLabel">{nome}</label>
+                <label className="AppComponentVersionLabel">{versione}</label>
             </div>
-        </>
+        </Link>
     );
 }
 

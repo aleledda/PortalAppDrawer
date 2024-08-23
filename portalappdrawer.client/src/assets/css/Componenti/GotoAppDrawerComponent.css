@@ -1,0 +1,18 @@
+.GotoAppDrawerFrame {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 10px;
+}
+.GotoAppDrawerFrame {
+    transition: transform 0.3s;
+    @apply size-40;
+}
+.GotoAppDrawerFrame:hover {
+    transform: scale(1.2);
+    color: black;
+}
+.GotoAppDrawerIcona {
+    font-size: 3.7rem;
+    @apply bg-stone-200 size-24 my-auto rounded-full;
+}

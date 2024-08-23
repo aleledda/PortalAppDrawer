@@ -1,2 +1,28 @@
-body {
+﻿.AppComponent {
+    @apply gap-5 pt-5;
+    @apply flex grid-cols-4;
+}
+.AppComponentFrame {
+    transition: transform 0.3s;
+    @apply size-40 relative my-auto flex flex-col items-center justify-center;
+}
+.AppComponentFrame:hover {
+    transform: scale(1.2);
+    color: black;
+}
+.AppComponentIcona {
+    font-size: 4.5rem;
+    @apply bg-stone-200 size-28 my-auto rounded-full;
+}
+.AppComponentNomeLabel {
+    /*padding generale*/
+    @apply px-8;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+a:visited {
+    text-decoration: none;
+    color: inherit;
 }
