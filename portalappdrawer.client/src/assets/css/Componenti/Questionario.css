@@ -1,0 +1,30 @@
+.containerButtonAvanti {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.containerButtonResponse {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.containerPreventivo {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.labelDescrizionePreventivo{
+    font-size: 1.4rem;
+}
+
+.labelPreventivo {
+    margin-left: 1rem;
+    font-size: 1.6rem;
+    color: lightgreen;
+}
+

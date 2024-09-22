@@ -15,7 +15,7 @@ function Preventivo() {
     const [preventivo, setPreventivo] = useState(0);
     
     const scorriQuestionarioIndice = (event) => {
-        // evito l'error index out of bound del oggetto questionario (n -> numero di domande)
+        // scorro le domande
         setCount(count + 1);
         // impostazione incrementale per il preventivo
         setPreventivo((preventivo) => preventivo + parseFloat(event.target.value));
@@ -30,8 +30,18 @@ function Preventivo() {
     // Creo l'oggetto per il modale
     const modale = {
         key: "modalePreventivo",
-        titolo: "Primi passi",
-        sottoTitolo: "Fase preliminare...",
+        titolo: (
+            <>
+                {/*Titolo personalizzato in base al indice*/ }
+                { count == 0 ? <p>Primi passi</p> : <p>Calcolo preventivo...</p> }
+            </>
+        ),
+        sottoTitolo: (
+            <>
+                {/*Sotto titolo personalizzato in base al indice*/}
+                {count == 7 ? <p></p> : count == 0 ? <p>Fase preliminare...</p> : <p>Domanda {count - 1} di 6</p>}
+            </>
+        ),
         corpo: (
             <div>
                 <Questionario indice={count} scorriQuestionarioIndice={scorriQuestionarioIndice} preventivo={ preventivo } />
@@ -41,8 +51,6 @@ function Preventivo() {
             <Button key='1' className="btn btn-light btn-outline-success" onClick={ resetFunction }>Reset</Button>
         ],
     };
-
-    
 
     return (
         <>

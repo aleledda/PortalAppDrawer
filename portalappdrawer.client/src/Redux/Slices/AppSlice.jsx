@@ -16,10 +16,10 @@ export const AppSlice = createSlice({
             },
             {
                 id: 2,
-                icona: <i class="bi bi-journal-code"></i>,
+                icona: <i className="bi bi-journal-code"></i>,
                 nome: 'Preventivo software',
                 descrizione: 'Calcolatore preventivo sviluppo software.',
-                versione: '0.0.0',
+                versione: '1.0.0',
                 goto: '/Preventivo',
                 attivo: false,
             },
