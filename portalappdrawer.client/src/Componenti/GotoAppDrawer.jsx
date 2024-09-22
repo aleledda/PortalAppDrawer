@@ -8,7 +8,7 @@ function GotoAppDrawer() {
         <Link to={ "/" }>
             <div className="GotoAppDrawerFrame">
                 <div className="GotoAppDrawerIcona">
-                    <i class="bi bi-boxes"></i>
+                    <i className="bi bi-boxes"></i>
                 </div>
             </div>
         </Link>

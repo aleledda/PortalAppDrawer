@@ -6,28 +6,22 @@ export const AppSlice = createSlice({
     initialState: {
         value: [
             {
-                id: 0,
-                icona: <i className="bi bi-instagram" ></i>,
-                nome: 'Instagram Watchdog',
-                descrizione: 'Attraverso l\'utilizzo delle API di meta recuperare informazioni sull\'account.',
-                versione: '0.0.0',
-                goto: '/InstagramWatchdog',
-            },
-            {
                 id: 1,
-                icona: <i className="bi bi-car-front-fill"></i>,
-                nome: 'Veicolo Watchdog',
-                descrizione: 'Attraverso l\'utilizzo delle API del ministero dei trasporti recuperare le informazioni di un veicolo dalla sua targa.',
-                versione: '0.0.0',
-                goto: '/VeicoloWatchdog',
-            },
-            {
-                id: 2,
                 icona: <i className="bi bi-layout-sidebar"></i>,
                 nome: 'Sidenav template',
                 descrizione: 'Collezione delle sidenav sviluppate per le varie piattaforme web-app.',
                 versione: '0.0.0',
                 goto: '/SidenavTemplate',
+                attivo: false,
+            },
+            {
+                id: 2,
+                icona: <i class="bi bi-journal-code"></i>,
+                nome: 'Preventivo software',
+                descrizione: 'Calcolatore preventivo sviluppo software.',
+                versione: '0.0.0',
+                goto: '/Preventivo',
+                attivo: false,
             },
         ],
     },

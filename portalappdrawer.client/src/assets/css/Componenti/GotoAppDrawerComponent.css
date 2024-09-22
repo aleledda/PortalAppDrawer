@@ -1,12 +1,12 @@
 .GotoAppDrawerFrame {
     position: absolute;
-    bottom: 0;
-    right: 0;
+    bottom: 1.2rem;
+    right: 1.2rem;
     padding: 10px;
 }
 .GotoAppDrawerFrame {
     transition: transform 0.3s;
-    @apply size-40;
+    @apply size-28;
 }
 .GotoAppDrawerFrame:hover {
     transform: scale(1.2);

@@ -19,7 +19,8 @@ function App() {
                                 key={app.id}
                                 nome={app.nome}
                                 icona={app.icona}
-                                goto={app.goto}>
+                                goto={app.goto}
+                                active={app.active}>
                                 {/* {app.descrizione}
                                 {app.versione} */}
                                 

@@ -5,27 +5,22 @@ import { Provider } from 'react-redux'
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
-import InstagramWatchdog from "./Pagine/InstagramWatchdog.jsx"
-import VeicoloWatchdog from "./Pagine/VeicoloWatchdog.jsx"
-import SidenavWatchdog from "./Pagine/SidenavTemplate.jsx"
+import SidenavSample from "./Pagine/SidenavTemplate.jsx"
+import Preventivo from "./Pagine/Preventivo.jsx"
 
 const router = createBrowserRouter([
     {
         path: "/",
-        element: <App></App>,
-    },
-    {
-        path: "/InstagramWatchdog",
-        element: <InstagramWatchdog></InstagramWatchdog>,
+        element: <App/>,
     },
     {
         path: "/SidenavTemplate",
-        element: <SidenavWatchdog></SidenavWatchdog>,
+        element: <SidenavSample/>,
     },
     {
-        path: "/VeicoloWatchdog",
-        element: <VeicoloWatchdog></VeicoloWatchdog>,
-    }
+        path: "/Preventivo",
+        element: <Preventivo/>,
+    },
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
