@@ -9,21 +9,19 @@ import 'react-toastify/dist/ReactToastify.css'
 
 function App() {
     const application = useSelector((state) => state.application.value);
-    console.log(application);
 
-    const handleMouseOverVersion = () => {
-        toast.info("Info Notification !", {
-            position: "bottom-center"
-        });
-        toast("Default Notification !");
-    };
+    console.log(application);
 
     return (
         <>
+            <div>
+                <ToastContainer position="top-center" limit="1" />
+            </div>
+
             <div className="AllElements">
                 <h1>Benvenuto su PAD</h1>
                 { /*Richiamo le icone per le App */}
-                <div className="AppComponent" onMouseOver={handleMouseOverVersion}>
+                <div className="AppComponent">
                     {
                         application.map((app) => (
                             <ApplicationElement
@@ -31,16 +29,15 @@ function App() {
                                 nome={app.nome}
                                 icona={app.icona}
                                 goto={app.goto}
-                                active={app.active}>
-                                {/* {app.descrizione}
-                                {app.versione} */}
+                                active={app.active}
+                                versione={app.versione}
+                                descrizione={app.descrizione}>
                                 
                             </ApplicationElement>
                         ))
                     }
                 </div>
             </div>
-            
         </>
     );
 }
